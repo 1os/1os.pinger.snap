@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd $SNAP/
-sh ./1os.pinger
+./1os.pinger

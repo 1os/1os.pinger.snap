@@ -2,7 +2,7 @@
 
 echo "{" > $SNAP_COMMON/appsettings.json
 echo "  \"auth\": \"$(snapctl get auth)\"," > $SNAP_COMMON/appsettings.json
-echo "  \"worker_id\": \"$(snapctl get worker_id)\"," > $SNAP_COMMON/appsettings.json
+echo "  \"worker_id\": \"$(snapctl get workerid)\"," > $SNAP_COMMON/appsettings.json
 echo "  \"Logging\": {" > $SNAP_COMMON/appsettings.json
 echo "    \"LogLevel\": {" > $SNAP_COMMON/appsettings.json
 echo "      \"Default\": \"Information\"," > $SNAP_COMMON/appsettings.json
