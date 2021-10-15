@@ -1,13 +1,3 @@
 #!/bin/sh -e
 
-echo "{" > $SNAP_COMMON/appsettings.json
-echo "  \"auth\": \"$(snapctl get auth)\"," > $SNAP_COMMON/appsettings.json
-echo "  \"worker_id\": \"$(snapctl get workerid)\"," > $SNAP_COMMON/appsettings.json
-echo "  \"Logging\": {" > $SNAP_COMMON/appsettings.json
-echo "    \"LogLevel\": {" > $SNAP_COMMON/appsettings.json
-echo "      \"Default\": \"Information\"," > $SNAP_COMMON/appsettings.json
-echo "      \"Microsoft\": \"Warning\"," > $SNAP_COMMON/appsettings.json
-echo "      \"Microsoft.Hosting.Lifetime\": \"Information\"" > $SNAP_COMMON/appsettings.json
-echo "    }" > $SNAP_COMMON/appsettings.json
-echo "  }" > $SNAP_COMMON/appsettings.json
-echo "}" > $SNAP_COMMON/appsettings.json
+snap restart fpinger
