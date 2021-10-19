@@ -5,7 +5,7 @@ architectures:
   - build-on: amd64
   - build-on: armhf
   - build-on: arm64
-version: '2021.10.18'
+version: '2021.10.19'
 summary: Bitrix24 Host checker app # 79 char long summary
 description: |
   This app will check hosts for availability for Bitrix24
@@ -28,7 +28,7 @@ parts:
     plugin: dump
     source:
       - on amd64: https://b24auth.blob.core.windows.net/fpinger/1os.pinger.x64.zip
-      - on armhf: https://b24auth.blob.core.windows.net/fpinger/1os.pinger.arm.zip
+      - on armhf: https://b24auth.blob.core.windows.net/fpinger/1os.pinger.armhf.zip
       - on arm64: https://b24auth.blob.core.windows.net/fpinger/1os.pinger.arm64.zip
     source-type: zip
     stage-packages:
